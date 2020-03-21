@@ -16,6 +16,7 @@ public class UserController {
     public UserController(MyUserRepository myUserRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
         this.applicationUserRepository = myUserRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+        System.out.println();
     }
 
     @PostMapping("/signup")
